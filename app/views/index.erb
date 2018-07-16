@@ -1,2 +1,4 @@
-Name: <%=@name%>
-Content <%=@content%>
+<%@posts.each do |post|%>
+  Name: <%=post.name%>
+  Content: <%=post.content%>
+<%end%>
